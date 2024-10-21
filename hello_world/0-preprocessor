@@ -1,22 +1,2 @@
 #!/bin/bash
-
-# Vérifie si la variable CFILE est définie
-if [ -z "$CFILE" ]; then
-    echo "La variable CFILE n'est pas définie."
-    exit 1
-fi
-
-# Définit le nom du fichier de sortie
-OUTPUT_FILE="c"
-
-# Exécute le préprocesseur et redirige la sortie vers le fichier
-gcc -E "$CFILE" -o "$OUTPUT_FILE"
-
-# Vérifie si l'opération a réussi
-if [ $? -eq 0 ]; then
-    echo "Le prétraitement a réussi. Résultat enregistré dans $OUTPUT_FILE."
-else
-    echo "Erreur lors du prétraitement."
-    exit 1
-fi
-
+"./%e"
