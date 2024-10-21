@@ -1,2 +1,2 @@
 #!/bin/bash
-"./%e"
+export CFILE=0-main.c
