@@ -1,35 +1,14 @@
-#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+/* more headers goes there */
 
-/**
- * main - Entry point of the program
- *
- * Return: Always 0 (Success)
- */
+/* betty style doc for function main goes there */
 int main(void)
 {
-    int n;
+	int n;
 
-    srand(time(0)); // Initialise le générateur de nombres aléatoires
-    n = rand() % 201 - 100; // Génère un nombre entre -100 et 100
-
-    printf("%d ", n); // Affiche le nombre
-
-    // Vérifie si le nombre est positif, nul ou négatif
-    if (n > 0)
-    {
-        printf("is positive\n");
-    }
-    else if (n == 0)
-    {
-        printf("is zero\n");
-    }
-    else
-    {
-        printf("is negative\n");
-    }
-
-    return (0);
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+	/* your code goes there */
+	return (0);
 }
-
