@@ -2,6 +2,11 @@
 #include <stdlib.h>
 #include <time.h>
 
+/**
+ * main - Entry point of the program
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
     int n;
@@ -9,20 +14,22 @@ int main(void)
     srand(time(0)); // Initialise le générateur de nombres aléatoires
     n = rand() % 201 - 100; // Génère un nombre entre -100 et 100
 
-    printf("%d ", n);
+    printf("%d ", n); // Affiche le nombre
+
+    // Vérifie si le nombre est positif, nul ou négatif
     if (n > 0)
     {
-        printf("est positif.\n");
+        printf("is positive\n");
     }
     else if (n == 0)
     {
-        printf("est nul.\n");
+        printf("is zero\n");
     }
     else
     {
-        printf("est négatif.\n");
+        printf("is negative\n");
     }
 
-    return 0;
+    return (0);
 }
 
