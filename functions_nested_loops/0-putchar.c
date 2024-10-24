@@ -1,4 +1,5 @@
 #include <stdio.h>
+int _putchar(char c);
 
 int main(void)
 {
@@ -6,3 +7,4 @@ int main(void)
      putchar('\n');
     return (0);
 }
+
