@@ -1,6 +1,10 @@
 #include <stdio.h>
 
-int main(void) {
-    printf("_putchar\n");
-    return 0;
+int _putchar(char c);
+
+int main(void)
+{
+    _putchar('H');
+    _putchar('\n');
+    return (0);
 }
